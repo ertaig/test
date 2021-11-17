@@ -1,0 +1,588 @@
+@import "general.scss";
+
+
+//                  header          //
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+
+	&__container {
+		display: flex;
+		min-height: 90px;
+		align-items: center;
+	}
+
+	&__logo {
+		max-width: 41px;
+	}
+
+	&__menu {
+		margin-left: 550px;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__button {
+		min-height: 44px;
+		display: flex;
+		font-family: "Inter-media";
+		font-size: 15px;
+		line-height: 40px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 8px;
+
+		&_border {
+			padding: 0 46px;
+			color: $orange;
+			border: 1px solid $orange;
+		}
+
+		&_orange {
+			padding: 0 36px;
+			background-color: $orange;
+			color: $white;
+		}
+	}
+}
+
+.header__button:not(:last-child) {
+			margin-right: 18px;
+		}
+
+.menu {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+		margin-right: 34px;
+	}
+
+	&__link {
+		font-family: "Inter-regular";
+		font-size: 16px;
+		line-height: 19.36px;
+		color: $grey;
+	}
+}
+
+.menu__link:hover {
+	color: $dark;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__login {
+	display: none;
+}
+
+//                  home-page          //
+
+.page {
+	flex: 1 1 auto;
+	&__home {}
+}
+
+.home-page {
+	padding: 167px 0 150px 0;
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__head {
+		margin-top: 33px;
+	}
+
+	&__title {
+		margin-bottom: 74px;
+	}
+
+	&__text {
+		 font-family: "Inter-semiBold";
+		 font-size: 22px;
+		 line-height: 26.63px;
+	}
+
+	&__form {
+	}
+
+	&__column {
+		display: grid;
+		grid-template-columns: 220px 220px;
+		grid-template-rows: 52px 52px;
+		grid-gap: 35px 30px;
+		margin-bottom: 47px;
+	}
+
+	&__item {
+		position: relative;
+		border: 0.8px solid $greybtn;
+		border-radius: 6px;
+		padding: 11px 0 11px 31px;
+		font-family: "Inter-regular";
+		font-size: 15px;
+		line-height: 32px;
+		color: $lightdark;
+	}
+
+	&__columns {
+		flex:0 0 50%;
+	}
+
+	&__button {
+		display: flex;
+		min-height: 60px;
+		justify-content: center;
+		align-items: center;
+		background-color: $orange;
+		border-radius: 8px;
+		font-family: "Mulish-bold";
+		font-size: 17px;
+		line-height: 40px;
+		color: $white;
+		padding: 4px 60px;
+	}
+
+	&__image {
+
+		
+img {
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+}
+	}
+
+	hr {
+		margin: 21px 0 48px 0;
+		width: 32px;
+		height: 2px;
+		background:$dark;
+	}
+}
+
+.home-page__item:after {
+	content: '';
+	position: absolute;
+	background: url(../images/Vector.svg) no-repeat;
+	width: 10px;
+	height: 6px;
+	top:25px;
+	right: 20px;
+}
+
+//                  newway-page          //
+
+.page {
+	&__newway {}
+}
+.newway-page {
+	margin-bottom: 150px;
+
+	&__body {
+		display: flex;
+		flex-wrap:no-wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+	}
+
+	&__title {
+		padding-top: 33px;
+	}
+
+	&__text {
+		max-width: 436px;
+		font-family: "Mulish-light";
+		font-size: 17px;
+		line-height: 30px;
+		color: $lightgrey;
+		margin: 20px 0 30px 0;
+	}
+
+	&__images {
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+
+.newway-page {
+
+	&__button {
+
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: $orange;
+		min-height: 48px;
+		border-radius: 8px;
+		padding: 14px 39px;
+		font-family: "Inter-semiBold";
+		font-size: 16px;
+		line-height: 20px;
+		color: $white;
+	}
+}
+
+//                  destation-page          //
+
+
+.page {
+	&__destinations {}
+}
+.destinations-page {
+	margin-bottom: 150px;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 41px;
+}
+
+	&__title {
+}
+
+	&__subtext {
+		position: relative;
+		font-family: "Inter-semiBold";
+		font-size: 17px;
+		line-height: 60px;
+		color: $orange;
+}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -10px -20px;
+}
+
+	&__column {
+		padding: 0 10px;
+		margin: 0 0 20px 0;
+}
+
+	&__item {
+		position: relative;
+	}
+	&__image {
+		width: 100%;
+		border-radius: 8px;
+	}
+	&__text {
+		position: absolute;
+		min-width: 120px;
+		padding-top: 11px;
+		font-family: "Inter-semiBold";
+		font-size: 18px;
+		line-height: 147%;
+		color: $middlidark;
+		background-color: $white;
+		border-radius: 0 4px;
+		bottom: 0;
+		left: 0;
+		span {
+			font-size: 17px;
+			color: $lightgrey;
+		}
+	}
+}
+
+//                  guides-page          //
+.page-guides {
+}
+
+.guides-page {
+	margin-bottom: 150px;
+
+	&__body {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+		flex: 0 1 50%;
+	}
+
+	&__title {
+		padding-top: 153px;
+	}
+
+	&__text {
+		max-width: 436px;
+		font-family: "Mulish-light";
+		font-size: 17px;
+		line-height: 30px;
+		color: $lightgrey;
+		margin: 20px 0 30px 0;
+	}
+	&__button {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: $orange;
+		border-radius: 8px;
+		min-height: 48px;
+		padding: 14px 39px;
+		font-family: "Inter-semiBold";
+		font-size: 16px;
+		line-height: 20px;
+		color: $white;
+	}
+
+	&__images {
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+
+//                  testimonials-page          //
+.page {
+	&__testimonials {}
+}
+.testimonials-page {
+	margin-bottom: 150px;
+
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column {
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__icon {}
+
+	&__text {
+		max-width: 450px;
+		margin: 30px 0 40px 0;
+		font-family: "Mulish-regular";
+		font-size: 24px;
+		line-height: 36px;
+		color: $black;
+	}
+
+	&__subtext {
+		font-family: "Inter-bold";
+		font-size: 22px;
+		line-height: 48px;
+		color: $black;
+		span {
+			font-family: "Inter-regular";
+			font-size: 18px;
+			line-height: 48px;
+		}
+	}
+
+	&__image {
+		position: relative;
+		max-width: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	&__subimg{
+		position: absolute;
+		background-color: #FFFFFF;
+		border-radius: 4px 0;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+//                  story-page          //
+.page-story {
+}
+.story-page {
+	margin-bottom: 150px;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 36px;
+	}
+
+	&__title {
+	}
+
+	&__subtext {
+		position: relative;
+		font-family: "Inter-semiBold";
+		font-size: 17px;
+		line-height: 60px;
+		color: $orange;
+	}
+
+	&__body {
+		display: flex;
+		margin: 0px -10px -20px;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		padding: 0px 10px;
+		margin: 0px 0px 20px 0px;
+		flex: 0 1 25%;
+	}
+
+	&__item {}
+}
+
+.item-story {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+
+	&__image {
+		position: relative;
+		padding: 0 0 100% 0;
+		border-radius: 4px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; 
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 4px 4px 0 0 ;
+		}
+	}
+
+	&__text {
+		flex: 1 1 auto;
+	}
+
+	&__title {
+		margin-top: 13px;
+	}
+
+	&__subtext {
+		font-family: "Inter-regular";
+		font-size: 15px;
+		line-height: 26px;
+		color: $lightgrey;
+		margin-top: 28px;
+		margin-bottom: 23px;
+	}
+
+	&__link {
+		font-family: "Inter-semiBold";
+		font-size: 15px;
+		line-height: 28px;
+		color: $orange;
+	}
+}
+
+//                  footer          //
+footer {
+		background: $footer;
+		padding-top: 70px;
+}
+.footer {
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 80px;
+	}
+
+	&__column {
+		flex: 0 1 25%;
+	}
+	&__column:not(:last-child) {
+		margin-right: 100px;
+
+	}
+	&__item {}
+
+	&__images {}
+
+	&__text {
+		margin: 26px 0 45px 0;
+		font-family: "Mulish-light";
+		font-size: 18px;
+		line-height: 28px;
+		color: $lgrey;
+	}
+
+	&__subtext {
+		font-family: "Mulish-light";
+		font-size: 17px;
+		line-height: 28px;
+		color: $lgrey;
+	}
+
+	&__label {
+		line-height: 60px;
+	}
+
+	&__menu {}
+
+	&__buttom {
+		margin: 13px 0 13px 0;
+	}
+
+	&__social {}
+
+	&__line {
+		width: 1219px;
+		height: 0.6px;
+		background:$gr;
+	}
+}
+
+.footer-top {
+}
+
+.menu-footer {
+	&__list {}
+
+	&__item {}
+
+	&__link {
+		font-family: "Mulish-light";
+		font-size: 18px;
+		line-height: 38px;
+		color: $lgrey;
+	}
+}
+
+.social {
+		display: flex;
+		justify-content: center;
+		align-atems: center;
+
+	&__item:not(:last-child) {
+		margin-right: 35px;
+	}
+}
+
+@import "media.scss";
